@@ -1,0 +1,16 @@
+baseURL: https://artfulbytes.com/
+languageCode: en-us
+title: Artful Bytes
+theme: ["PaperMod"]
+
+params:
+  assets:
+    css:
+      - css/custom.css
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
