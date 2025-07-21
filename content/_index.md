@@ -1,6 +1,6 @@
 ---
 title: "Home"
-videos:
+videoseries:
   - id: g9KbXJydf8I
     title: "#1 Intro and Overview"
     desc: "Introducing a video series about programming a sumobot (embedded system) form scratch in C."
