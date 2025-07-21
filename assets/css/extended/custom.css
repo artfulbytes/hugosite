@@ -39,8 +39,8 @@ body {
 
 .video-grid iframe {
   flex: 1 1 45%;
+  min-width: 300px;
   aspect-ratio: 16 / 9;
-  width: 100%;
   border: none;
   border-radius: 1rem;
   display: block;
