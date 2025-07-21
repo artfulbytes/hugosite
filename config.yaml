@@ -7,10 +7,5 @@ params:
   assets:
     css:
       - css/custom.css
-
-menu:
-  main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
+  footer:
+    hideCopyright: false
