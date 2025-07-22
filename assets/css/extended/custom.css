@@ -187,7 +187,7 @@ body {
   margin: 0 auto;
 }
 
-.formkit-form[data-uid="d36f22dc98"] [data-style="minimal"] {
+.footer .formkit-form[data-uid="d36f22dc98"] [data-style="minimal"] {
     padding: 0 !important;
 }
 
@@ -207,7 +207,7 @@ body {
 
 
 .formkit-form[data-uid="d36f22dc98"] {
-    max-width: 550px !important;
+    max-width: 650px !important;
     /* other styles */
 }
 
@@ -218,14 +218,14 @@ body {
 }
 
 
-.formkit-form[data-uid="d36f22dc98"] {
+.footer .formkit-form[data-uid="d36f22dc98"] {
   display: flex !important;
   flex-direction: column !important;
   gap: 0.75rem !important;
 }
 
-.formkit-form[data-uid="d36f22dc98"] input[type="email"],
-.formkit-form[data-uid="d36f22dc98"] button {
+.footer .formkit-form[data-uid="d36f22dc98"] input[type="email"],
+.footer .formkit-form[data-uid="d36f22dc98"] button {
   width: 100%;
   box-sizing: border-box;
 }
