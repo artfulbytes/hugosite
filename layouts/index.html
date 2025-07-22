@@ -1,6 +1,10 @@
 {{ define "main" }}
   <div class="signup-row">
-    {{ partial "convertkit-form.html" . }}
+    {{ partial "convertkit-form.html" (dict
+      "header" "Get Practical Embedded Tips"
+      "subheader" "I share short and practical tips about embedded systems. One useful idea at a time, in an easy-to-read email. Plus a heads-up when a new video is out."
+      "ctx" .
+    ) }}
   </div>
 
   <div class="recent-videos">

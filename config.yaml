@@ -8,4 +8,4 @@ params:
     css:
       - css/custom.css
   footer:
-    hideCopyright: false
+    hideCopyright: true

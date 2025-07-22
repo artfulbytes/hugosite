@@ -19,6 +19,13 @@ body {
   font-family: 'Londrina Solid', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logo a:hover,
+.logo a:active {
+  color: #1677be;
+  text-decoration: underline;
 }
 
 .recent-videos {
@@ -174,8 +181,33 @@ body {
   background-color: var(--tertiary);
 }
 
+
+.footer .formkit-form[data-uid="d36f22dc98"] {
+  max-width: 500px !important;
+  margin: 0 auto;
+}
+
+.formkit-form[data-uid="d36f22dc98"] [data-style="minimal"] {
+    padding: 0 !important;
+}
+
+
+.footer .formkit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer input[type="email"],
+.footer button {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+
+
 .formkit-form[data-uid="d36f22dc98"] {
-    max-width: 750px !important;
+    max-width: 550px !important;
     /* other styles */
 }
 
@@ -184,6 +216,21 @@ body {
   margin: 0 auto;
   display: block;
 }
+
+
+.formkit-form[data-uid="d36f22dc98"] {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+}
+
+.formkit-form[data-uid="d36f22dc98"] input[type="email"],
+.formkit-form[data-uid="d36f22dc98"] button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
 
 .formkit-guarantee {
   color: var(--primary) !important;
@@ -280,6 +327,9 @@ form[name="contact"] {
   font-family: inherit;
 }
 
+.contact {
+    margin: 5rem 0;
+}
 .contact h2 {
   color: var(--primary) !important;
   font-size: 2rem;
@@ -326,7 +376,7 @@ form[name="contact"] button {
   background: #1677be;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2.5rem;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -336,3 +386,62 @@ form[name="contact"] button {
 form[name="contact"] button:hover {
   background: #66b3ff;
 }
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-fullwidth {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: var(--header-bg);
+}
+
+.footer-right {
+  margin: 1rem 5rem;
+  min-width: 100px;
+}
+
+.footer-left {
+  flex: 1;
+  margin: 1rem 4rem;
+  max-width: 400px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.footer-right h1 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.footer-right li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-right a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: none;
+  color: var(--primary);
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+  border-bottom: none;
+  color: #1677be;
+}
+
+
+
