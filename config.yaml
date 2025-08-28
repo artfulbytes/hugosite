@@ -4,6 +4,7 @@ title: Artful Bytes
 theme: ["PaperMod"]
 
 params:
+  defaultTheme: dark
   assets:
     css:
       - css/custom.css

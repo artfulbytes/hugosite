@@ -18,7 +18,7 @@ body {
   /*font-family: 'Poppins', sans-serif;*/
   font-family: 'Londrina Solid', sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -59,8 +59,15 @@ body {
   }
 }
 
+.formkit-form[data-uid="d36f22dc98"] h2 {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+}
+
 .signup-row {
   width: 100vw;
+  display: flex;
+  justify-content: center;
   margin-left: calc(-50vw + 50%);
   background-color: var(--header-bg);
   color: var(--content);
@@ -68,6 +75,19 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.inner-signup-row {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.signup-image {
+  margin: auto;
 }
 
 .video-scroll-container {
@@ -207,7 +227,7 @@ body {
 
 
 .formkit-form[data-uid="d36f22dc98"] {
-    max-width: 650px !important;
+    max-width: 440px !important;
     /* other styles */
 }
 
@@ -262,7 +282,7 @@ button:active {
 }
 
 .formkit-submit:hover {
-    background: #66b3ff !important;
+    background: #000000 !important;
 }
 
 .about {
@@ -384,7 +404,7 @@ form[name="contact"] button {
 }
 
 form[name="contact"] button:hover {
-  background: #66b3ff;
+  background: #000000;
 }
 
 .footer-content {
