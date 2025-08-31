@@ -11,7 +11,7 @@ tags = []
 
 Getting into embedded systems can feel overwhelming since it covers everything from designing integrated circuits and PCBs to FPGA development, firmware, applications, operating systems, and more. It’s easy to spend more time researching than actually building. In my experience, the best way to cut through that kind of confusion is to simply pick something and focus on it. This short guide is my attempt to show one way of doing that: by approaching your learning as a series of projects.
 
-I’ve worked in embedded for about seven years, mostly in software and more recently some hardware. That gives me enough background to have something to say, but not the whole picture, so this guide is naturally shaped by my personal experience. The upside is that you get a practical, personal take from someone who has been doing the work. The trade-off is that it doesn't cover everything like a [broad roadmap](https://github.com/m3y54m/Embedded-Engineering-Roadmap) (still great as a reference!) might.
+I’ve worked in embedded for about seven years, mostly in software and more recently some hardware. That gives me enough background to have something to say, but not the whole picture, so this guide is naturally shaped by my personal experience. The upside is that you get a practical, personal take from someone who has been doing the work. The trade-off is that it doesn't cover everything like a [broad roadmap](https://github.com/m3y54m/Embedded-Engineering-Roadmap) (great reference!) might.
 
 I do plan to keep this updated, so if something isn’t clear or if you have questions, send a message to _niklas@artfulbytes.com_.
 
