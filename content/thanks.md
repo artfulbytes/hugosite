@@ -9,5 +9,5 @@ tags = []
   list = "never"
 +++
 
-And here's my [short guide on learning embedded by building](/embedded-guide).
+And here's my [short guide to learning embedded by building](/embedded-guide).
 
