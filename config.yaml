@@ -1,4 +1,11 @@
 baseURL: https://artfulbytes.com/
+
+security:
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^CI$'
+      - '^CONVERTKIT_API_SECRET$'
 languageCode: en-us
 title: Artful Bytes
 theme: ["PaperMod"]

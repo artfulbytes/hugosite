@@ -252,6 +252,17 @@ body {
 
 
 
+.formkit-subheader p:not(.subscriber-byline) {
+  margin-bottom: 0 !important;
+}
+
+.subscriber-byline {
+  font-size: 15px !important;
+  color: var(--primary) !important;
+  text-align: center !important;
+  margin: 8px 0 8px 0 !important;
+}
+
 .formkit-guarantee {
   color: var(--primary) !important;
   margin: 0 !important;
