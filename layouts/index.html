@@ -18,8 +18,27 @@
   <div class="recent-videos">
     <h2>Recent Videos</h2>
     <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/sp3mMwo3PO0" title="Video 1" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/9FTUa-2eIDU" title="Video 1" allowfullscreen></iframe>
+      {{ $apiKey := os.Getenv "YOUTUBE_API_KEY" }}
+      {{ if $apiKey }}
+        {{ $channelRes := resources.GetRemote (printf "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forHandle=artfulbytes&key=%s" $apiKey) }}
+        {{ with $channelRes }}
+          {{ if not .Err }}
+            {{ with .Content | transform.Unmarshal }}
+              {{ $playlistId := (index .items 0).contentDetails.relatedPlaylists.uploads }}
+              {{ $videosRes := resources.GetRemote (printf "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=%s&maxResults=2&key=%s" $playlistId $apiKey) }}
+              {{ with $videosRes }}
+                {{ if not .Err }}
+                  {{ with .Content | transform.Unmarshal }}
+                    {{ range .items }}
+                      <iframe src="https://www.youtube.com/embed/{{ .snippet.resourceId.videoId }}" title="{{ .snippet.title }}" allowfullscreen></iframe>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
     </div>
   </div>
 
