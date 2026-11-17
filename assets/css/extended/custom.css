@@ -507,3 +507,8 @@ form[name="contact"] button:hover {
 
 
 
+
+/* The inline 6502 stepper ({{< stepper >}}): room before the text that follows it */
+.post-content .stepper {
+  margin-bottom: 2rem;
+}
