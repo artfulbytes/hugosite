@@ -264,6 +264,36 @@ body {
   margin: 8px 0 8px 0 !important;
 }
 
+.past-notes {
+  font-size: 15px !important;
+  text-align: center !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.past-notes a,
+.past-notes a:hover {
+  color: var(--primary) !important;
+  text-decoration: underline;
+  border-bottom: none !important;   /* PaperMod's footer links add their own underline */
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.4rem 0;
+}
+
+.notes-list time {
+  color: var(--secondary);
+  flex: none;
+  min-width: 7.5rem;
+}
+
 .formkit-guarantee {
   color: var(--primary) !important;
   margin: 0 !important;
